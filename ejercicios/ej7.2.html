@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7.2</title>
+</head>
+<body>
+
+    <h1>Cambio de imagenes con JavaScript</h1>
+    <img id="myFPImage"
+         onclick="cambiaPic()"
+         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS23TT31iKb_NfwOmc2G-cw_bL6HwYj6CDYi3ELVI7UGNmDYRorqj6akng&s=10"
+         width="500"
+         height="580">
+
+    <p>Haz click sobre las letras para cambiarlas</p>
+
+    <script>
+        function cambiaPic() {
+            var image = document.getElementById('myFPImage');
+            if (image.src.match("green")) {
+                image.src = "https://e01-elmundo.uecdn.es/assets/multimedia/imagenes/2021/11/21/16375120356049.jpg"
+            } else {
+                image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS884vitSLiohVlu2BdOteDCaILHOp3GH9w4p_3oYt5hAlFcvYTBdtQkg6O&s=10"
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <script>
+        function cambiarImagen() {
+            var image = document.getElementById('img');
+            if (image.src.match("ferrari")) {
+                image.src = "lamborghini.jpg"
+            } else if (image.src.match("lamborghini")) {
+                image.src = "porsche.jpg"
+            } else if (image.src.match("porsche")) {
+                image.src = "toyota.jpg"
+            } else {
+                image.src = "ferrari.jpg"
+            }   
+        }
+    </script>
+</head>
+<body>
+    <h1>Cambia la imagen</h1>
+    <img id="img" onclick="cambiarImagen()" src="ferrari.jpg" width="800" height="580">
+    <p>Pulsa en la imagen para cambiarla</p>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos de Salida</title>
+</head>
+<body>
+
+    <h1>Prueba de Métodos de Salida en JavaScript</h1>
+    <p id="contenedor">Contenido previo...</p>
+
+    <button onclick="probarAlert()">1. Ventana Alerta</button>
+    <button onclick="probarConsola()">2. Mensaje en Consola</button>
+    <button onclick="probarinnerHTML()">3. Modificar DOM (innerHTML)</button>
+    <button onclick="probarDocumentWrite()">4. Document Write</button>
+
+    <script>
+        function probarAlert() {
+            window.alert("Hola mundo");
+        }
+
+        function probarConsola() {
+            console.log("Hola mundo");
+        }
+
+        function probarinnerHTML() {
+            document.getElementById("contenedor").innerHTML = "<strong>Texto cambiado</strong>";
+        }
+
+        function probarDocumentWrite() {
+            document.write("Hola mundo");
+        }
+    </script>
+
+    /* o tambien >script src="script.js">>/script> (flechas cambiadas)
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    
+</head>
+<body>
+    <h1>Calculos de una circunferencia de radio 5</h1>
+
+    <h3>Area</h3> <p id="area"></p>
+    <h3>Longitud</h3> <p id="longitud"></p>
+
+    <script>
+        var a = 3.14 * 5 ** 2
+        var l = 2 * 3.14 * 5
+
+        function area() {
+            document.getElementById('area').innerHTML = a
+        }
+
+        function longitud() {
+            document.getElementById('longitud').innerHTML = l
+        }
+
+        area()
+        longitud()
+    </script>
+</body>
+</html>
